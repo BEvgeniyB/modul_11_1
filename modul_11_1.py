@@ -1,3 +1,4 @@
+#-*- coding: utf-8 -*-
 import requests
 from pprint import pprint
 import xml.etree.ElementTree as ET
@@ -19,7 +20,7 @@ kpp = ll['kpp']
 org = ll['Org']
 ogrn = ll['ogrn']
 ogrn_date = ll['ogrn_date']
-print(f' {org}')
+print(f'Организация {org}')
 file = r_html.text
 with open("text.txt", mode='w') as ff:
     if 'UTF-8' in file:
